@@ -29,19 +29,6 @@ Analyze monthly revenue and order volume from a cleaned online sales dataset usi
 7. *Peak Revenue Day*
 8. *Payment Method Preferences*
 
-## *SQL Queries Highlights*
-
-```sql
--- Monthly Revenue and Order Volume
-SELECT 
-  YEAR(order_date) AS year,
-  MONTH(order_date) AS month,
-  COUNT(DISTINCT transaction_id) AS total_orders,
-  SUM(amount) AS total_revenue
-FROM cleaned_online_sales
-GROUP BY YEAR(order_date), MONTH(order_date)
-ORDER BY year, month;
-
 ## *Outcome / Learnings*
 
 Practical experience in using SQL for business insights
